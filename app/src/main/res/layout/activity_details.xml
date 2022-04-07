@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contact"
+    android:scaleType="fitXY"
+    android:fitsSystemWindows="true"
+    android:id="@+id/relativeLayoutdetails"
+
+    tools:context=".DetailsActivity">
+
+
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+        android:id="@+id/progressbar"
+        android:indeterminate="true"
+        android:max="100"
+        android:progress="0"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="30sp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/nametextviewss"
+        android:layout_below="@id/imagescontact"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number"
+        android:textSize="30sp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/numbertextviewss"
+        android:layout_below="@id/nametextviewss"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/nameedittextvies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagescontact"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/nametextviewss"
+        android:hint="Enter name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/nametextviewss"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:id="@+id/numberedittextvies"
+        android:layout_below="@id/nameedittextvies"
+        android:hint="Enter Number"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/progressbar"
+        android:src="@drawable/contact"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="50dp"
+
+        android:fitsSystemWindows="true"
+        android:id="@+id/imagescontact"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberedittextvies"
+        android:layout_margin="40dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:id="@+id/savebtn"/>
+
+</RelativeLayout>
+
